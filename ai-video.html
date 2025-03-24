@@ -12,9 +12,9 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .container {
@@ -25,6 +25,7 @@
             width: 100%;
             max-width: 500px;
             text-align: center;
+            margin: 20px 0;
         }
 
         h1 {
@@ -76,9 +77,46 @@
             font-size: 18px;
             color: #007bff;
         }
+
+        .ad-banner {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .ad-banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Ad Banner at the Top -->
+    <div class="ad-banner">
+        <a href="https://example.com" target="_blank">
+            <img src="https://via.placeholder.com/728x90.png?text=Ad+Banner+1" alt="Ad Banner 1">
+        </a>
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>AI Image to Video Converter</h1>
         <form id="uploadForm">
@@ -100,6 +138,20 @@
             </video>
         </div>
     </div>
+
+    <!-- Ad Banner at the Bottom -->
+    <div class="ad-banner">
+        <a href="https://example.com" target="_blank">
+            <img src="https://via.placeholder.com/728x90.png?text=Ad+Banner+2" alt="Ad Banner 2">
+        </a>
+    </div>
+
+    <!-- Footer with Hyperlinks -->
+    <footer>
+        <p>Powered by <a href="https://example.com/ai-service" target="_blank">AI Service</a></p>
+        <p>Need help? <a href="https://example.com/support" target="_blank">Contact Support</a></p>
+        <p>Follow us on <a href="https://twitter.com/example" target="_blank">Twitter</a></p>
+    </footer>
 
     <script>
         // JavaScript Functionality
